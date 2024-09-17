@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kovetskiy/mark/attachment"
+	"github.com/ppd/mark/attachment"
 	"github.com/stretchr/testify/assert"
 )
 

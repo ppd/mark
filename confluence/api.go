@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/hashicorp/go-retryablehttp"
 	"github.com/kovetskiy/gopencils"
 	"github.com/kovetskiy/lorg"
 	"github.com/reconquest/karma-go"
@@ -104,6 +105,8 @@ func NewAPI(baseURL string, username string, password string) *API {
 		}
 	}
 	rest := gopencils.Api(baseURL+"/rest/api", auth)
+	rest.SetClient(retryablehttp.NewClient().StandardClient())
+
 	if username == "" {
 		if rest.Headers == nil {
 			rest.Headers = http.Header{}

@@ -11,15 +11,15 @@ import (
 
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/kovetskiy/lorg"
-	"github.com/kovetskiy/mark/attachment"
-	"github.com/kovetskiy/mark/confluence"
-	"github.com/kovetskiy/mark/includes"
-	"github.com/kovetskiy/mark/macro"
-	mark "github.com/kovetskiy/mark/markdown"
-	"github.com/kovetskiy/mark/metadata"
-	"github.com/kovetskiy/mark/page"
-	"github.com/kovetskiy/mark/stdlib"
-	"github.com/kovetskiy/mark/vfs"
+	"github.com/ppd/mark/attachment"
+	"github.com/ppd/mark/confluence"
+	"github.com/ppd/mark/includes"
+	"github.com/ppd/mark/macro"
+	mark "github.com/ppd/mark/markdown"
+	"github.com/ppd/mark/metadata"
+	"github.com/ppd/mark/page"
+	"github.com/ppd/mark/stdlib"
+	"github.com/ppd/mark/vfs"
 	"github.com/reconquest/karma-go"
 	"github.com/reconquest/pkg/log"
 	"github.com/urfave/cli/v2"
@@ -29,7 +29,7 @@ import (
 const (
 	version     = "11.3.0"
 	usage       = "A tool for updating Atlassian Confluence pages from markdown."
-	description = `Mark is a tool to update Atlassian Confluence pages from markdown. Documentation is available here: https://github.com/kovetskiy/mark`
+	description = `Mark is a tool to update Atlassian Confluence pages from markdown. Documentation is available here: https://github.com/ppd/mark`
 )
 
 var flags = []cli.Flag{
